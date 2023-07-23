@@ -29,7 +29,7 @@ export default class NavbarComp extends Component {
                             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                             <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="justify-content-end" style={{ width: "90%",fontfamily: 'Lato'}}>
-                                <Nav.Link as={Link} to= {'/SpikeFam'} style={{color:'black', marginRight: '35px'}}>HOME</Nav.Link>
+                                <Nav.Link as={Link} to= {'/home'} style={{color:'black', marginRight: '35px'}}>HOME</Nav.Link>
                                 <Nav.Link as={Link} to= {'/about'} style={{color:'black', marginRight: '35px'}}>ABOUT</Nav.Link>
                                 <NavDropdown  title={<span style={{ color: 'black' }}>PROGRAMS</span>} id="dropdown1" style={{ marginRight: '35px', color:'white' }}>
                                 <NavDropdown.Item as={Link} to={'/tournaments'}>YEARLY TOURNAMENTS</NavDropdown.Item>
@@ -55,7 +55,7 @@ export default class NavbarComp extends Component {
 
                 <div>
                 <Routes>
-                    <Route path="/SpikeFam" element={<Homee />} />
+                    <Route path="/home" element={<Homee />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/tournaments" element={<Tournaments />} />
                     <Route path="/sittingv" element={<Sittingv />} />
