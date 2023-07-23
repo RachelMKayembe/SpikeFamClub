@@ -15,12 +15,16 @@ const labelStyle = {
 export default function CourtRFirst() {
   return (
     <FormControl>
-      <FormLabel id="demo-row-radio-buttons-group-label" sx={{ marginTop: '20px', marginBottom: '20px' }} >Indoor/Outdoor Court</FormLabel>
-      <p>Please note that the selected court will be set in advance</p>
-      <p>Provided elements:</p>
-      <p>- 4 balls</p>
-      <p>- Music Room key</p>
-      <p>When done, please hand in the used items to the front desk</p>
+      <div style={{backgroundColor:'#FFCD82', marginBottom:'15px', marginTop:'10px', marginLeft:'30px', marginRight:'240px'}}>
+        <FormLabel id="demo-row-radio-buttons-group-label" sx={{ marginTop: '5px', marginBottom: '20px',fontFamily:'Lato'}} ><h3>Indoor/Outdoor Court</h3></FormLabel>
+        <div style={{fontFamily:'Lato', marginLeft:'40px'}}>
+          <h5>Please note that the selected court will be set in advance</h5>
+          <h5>Provided elements:</h5>
+          <h5 style={{marginLeft:'40px'}}>- 4 balls</h5>
+          <h5 style={{marginLeft:'40px'}}>- Music room key(indoor) or radio container key(outdoor)</h5>
+          <h5 style={{fontWeight: 'bold'}}>When done, please hand in the used items to the front desk</h5>
+        </div>
+      </div>
       <RadioGroup
         row
         aria-labelledby="demo-row-radio-buttons-group-label"
@@ -85,8 +89,6 @@ export default function CourtRFirst() {
 
       </RadioGroup>
     </FormControl>
-    
-
     
   );
 }

@@ -6,11 +6,11 @@ import Container from '@mui/material/Container';
 export default class Courtr extends Component {
   render() {
     return (
-      <div className="courtreserve">
+      <div className="courtreserve" STYLE={{fontFamily: 'Lato'}}>
         
         <Container >
-        <h5 >COURT RESERVATION</h5>
-          <Box sx={{ bgcolor: '#D9D9D9', borderRadius: '20px'}} style={{padding: "30px 30px 30px 30px"}}>
+        <h3 style={{marginTop:'20px',fontFamily: 'Lato',fontWeight: 'bold', color:'white'}}>COURT RESERVATION</h3>
+          <Box sx={{ bgcolor: 'white', borderRadius: '20px'}} style={{padding: "10px 30px 30px 10px"}}>
             <FormStepper />
           </Box>
         </Container>

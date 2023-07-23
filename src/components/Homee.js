@@ -7,7 +7,7 @@ export default class Homee extends Component {
         <div>
           
         </div>
-        <Slider /> {/* Include the Slider component here */}
+        <Slider /> 
       </div>
     );
   }

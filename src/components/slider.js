@@ -1,48 +1,44 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-
-
 function Slider() {
   return (
-    <Carousel>
-      <Carousel.Item interval={1000}>
+    <Carousel data-bs-theme="dark">
+      <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.pexels.com/photos/12169045/pexels-photo-12169045.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+          src="https://cdn.pixabay.com/photo/2016/08/24/19/54/volleyball-1617874_1280.jpg"
           alt="First slide"
-          style={{ height: '700px' }}
+          style={{ height: '900px'}}
         />
-        <Carousel.Caption>
-          <h3>March 12, 2023</h3>
-          <p>Beach volleyball practice</p>
+        <Carousel.Caption style={{ backgroundColor: 'white',  borderRadius: '12px', padding: "5px 0px 0px 0px",width: '30%'}}>
+          <h5>Adult Women's Volleyball in Quebec city</h5>
+          <p>July 3rd, 2023</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.pexels.com/photos/6203595/pexels-photo-6203595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src="https://images.pexels.com/photos/12169164/pexels-photo-12169164.jpeg?auto=compress&cs=tinysrgb&w=1600"
           alt="Second slide"
-          style={{ height: '700px' }}
-          
+          style={{ height: '900px'}}
         />
-        <Carousel.Caption>
-          <h3>April 2nd, 2023</h3>
-          <p>Men's adult volleyball practice</p>
+        <Carousel.Caption style={{ backgroundColor: 'white',  borderRadius: '12px', padding: "5px 0px 0px 0px", width: '30%'}}>
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://i.pinimg.com/564x/83/b1/11/83b111c8c6a84725cf7c5aec011da2fe.jpg"
+          src="https://images.pexels.com/photos/6203520/pexels-photo-6203520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="Third slide"
-          style={{ height: '700px' }}
-          
+          style={{ height: '900px'}}
         />
-        <Carousel.Caption>
-          <h3>February 10, 2023</h3>
+        <Carousel.Caption style={{ backgroundColor: 'white',  borderRadius: '12px', padding: "5px 0px 0px 0px", width: '30%'}}>
+          <h5>Court reservation session</h5>
           <p>
-            Women's sitting volleyball home game
+            July 6, 2023.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

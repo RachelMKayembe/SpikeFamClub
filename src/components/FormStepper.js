@@ -61,7 +61,7 @@ export default function FormStepper() {
     <Box sx={{ width: '100%' }}>
       <Stepper activeStep={activeStep}>
         {steps.map((label, index) => {
-          const stepProps = { sx: {marginTop: '20px',marginBottom: '20px',bgcolor: 'white',borderRadius: '10px',padding: '10px'}};
+          const stepProps = { sx: {marginTop: '10px',marginBottom: '10px',bgcolor: 'white',borderRadius: '10px',padding: '10px',border: '1px solid black'}};
           const labelProps = {};
           if (isStepOptional(index)) {
             labelProps.optional = (
