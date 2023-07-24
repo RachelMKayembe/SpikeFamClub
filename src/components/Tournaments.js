@@ -23,7 +23,7 @@ const Tournaments = ({ defaultActiveKey }) => {
           <Video/>
         </div>
         <div style={{backgroundColor:'white'}}>
-          <h3 style={{marginLeft:"700px", marginBottom:'30px',fontFamily: 'Lato' }}> ANNUAL TOURNAMENTS
+          <h3 style={{marginLeft:"700px", marginBottom:'30px',fontFamily: 'Lato' }}> OUR YEARLY TOURNAMENTS
           </h3>
         </div>
         <div className="searchInput_Container">
@@ -53,6 +53,7 @@ const Tournaments = ({ defaultActiveKey }) => {
                 <img src={val.image} alt="" style={{marginTop:'15px', width:'475px', marginLeft:'30px', marginBottom:'10px'}}/>
                 <h3>{val.title}</h3>
                 <p className="date">{val.date}</p>
+                <p className="price:">{val.price}</p>
                 <a href="http://localhost:60994/registration">
                   <button className="regButton">REGISTER</button>
                 </a>
